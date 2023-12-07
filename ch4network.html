@@ -1,0 +1,467 @@
+<!-- Name: Danie McClanahan -->
+<!-- Program Purpose: This is my PVCC ch4network file. It will include terminology and definitions from Chapter 4 in our text book-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Danie-McClanahan</title>
+		<style>
+			body {background-image: url(ch4background.png);font-family: Arial, Helvetica, sans-serif;}
+			table.main { width: 80%; color: #9e9aa3; margin: auto; background-color: rgb(17, 19, 32, 85%);}
+			table.terms {border: 1px; border-color: #2f2e30;color: #adb79d; margin: auto; background-color: rgb(17, 19, 32, 60%); border-collapse: collapse;}
+			table.terms td {padding: 0px 30px 0px 0px}
+			h1.first-header {font-size: 20px;}
+			h1.second-header {text-align: center;text-decoration: underline;text-decoration-color: #bdabab;text-decoration-thickness: 2px;}
+			td.NAVBAR {font-size: large;text-align: center;font-weight: bold;text-decoration: underline;text-decoration-color: #e3c665;}
+			td.term {margin-bottom: 30px;line-height: 1.3;}
+			li.term {margin-bottom: 10px;}
+			a {text-decoration: none;}
+			a:link {color: #e3c665;}
+			a:visited {color: #7f7b83;}
+			a:hover {color: #f5e7ba;}
+			a:active {color: #f5e7ba;}
+		</style>
+	</head>
+	<body>
+		<table class="main">
+			<tr>
+				<td colspan="4" style="padding: 15px">
+					<h1 class="first-header">Danie McClanahan</h1>
+				</td>
+			</tr>
+			<tr>
+				<td class="NAVBAR"><a href="index.html"> Home</a></td>
+				<td class="NAVBAR"><a href="https://www.pvcc.edu">PVCC</a></td>
+				<td class="NAVBAR"><a href="https://www.w3schools.com/html/">W3 Schools</a></td>
+				<td class="NAVBAR" style="width: 20%"><a href="contactus.html">Contact Us</a></td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<table class="terms">
+						<tr>
+							<td>
+								<h1 class="second-header">Chapter 4: Networking & The Internet Terminology</h1>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term">
+										<u>Network Classification</u> - Network is a system where computers are linked and therefore able to
+										comunicate with each other and tranfer data. PAN, LAN, MAN, and WAN is one way of classifying them
+										in terms of how big the network spans.
+									</li>
+									<ul>
+										<li>
+											<b>PAN</b>: "Personal Area Network" A computer network that is used for short-range communication (less
+											than a few meters) such as Bluetooth
+										</li>
+										<li>
+											<b>LAN</b>: "Local Area Network" A computer network that consists of a collection of computers in a
+											single building or building complex that are connected wirely though a "wifi" router
+										</li>
+										<li>
+											<b>MAN</b>: "Metropolitan Area Network" A computer network that is a network of intermediate size, such
+											as one spanning a local community
+										</li>
+										<li>
+											<b>WAN</b>: "Wide Area Network" A computer network that is links machines over a greater distance—perhaps
+											in neighboring cities or on opposite sides of the world.
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term">
+										<u>Network Models</u> - Bus and Star networks are another way of classify networks but instead
+										differenciate them based on the topology of the network which refers to the patterm in which the
+										machines are connected.
+									</li>
+									<ul>
+										<li>
+											<b>Protocols</b>: Rules by which activities are conducted to ensure a network functions reliably, and
+											make it possible for vendors to build products for network applications that are compatible with
+											products from other vendors. Thus, the development of protocol standards is an indispensable
+											process in the development of networking technologies.
+										</li>
+										<li>
+											<b>CSMA/CD Ethernet</b>: "Carrier Sense, Multiple Access with Collision Detection" is a protocol used
+											with Ethernet which dictates that each message be broadcast to all the machines on the bus. Each
+											machine monitors all the messages but keeps only those addressed to itself. CSMA/CD is not
+											compatible with wireless star networks. EX</b>: To transmit a message, a machine waits until the bus
+											is silent. If another machine also begins transmitting, both machines detect the clash and pause
+											for a brief, independently random period of time before trying to transmit again.
+										</li>
+										<li>
+											<b>CSMA/CA WiFi</b>: "Carrier Sense, Multiple Access with Collision Avoidance" the policy of trying to
+											avoid collisions rather than trying to detect them (many of which are standardized by IEEE).
+											Collision avoidance protocols are designed to avoid collisions and may not eliminate them
+											completely. When collisions do occur, messages must be retransmitted. The most common approach to
+											collision avoidance is based on giving advantage to machines that have already been waiting for an
+											opportunity to transmit. Similar to Ethernet's CSMA/CD. EX</b>: when a machine first needs to transmit
+											a message and finds the communication channel silent, it does not start transmitting immediately.
+											Instead, it waits for a short period of time and then starts transmitting only if the channel has
+											remained silent throughout that period. This protocol, however, does not solve the hidden terminal
+											problem. To solve this problem, some WiFi networks require that each machine send a short
+											“request” message to the AP and wait until the AP acknowledges that request before transmitting an
+											entire message.
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term">
+										<u>Combined Networks</u> - Sometimes it is necessary to connect existing networks to form an
+										extended communication system. This can be done by connecting the networks to form a larger version
+										of the same “type” of network. For example connecting two bus networks to form a single long bus.
+									</li>
+									<ul>
+										<li>
+											<b>repeater</b>: Simplilest network connector that passes signals back and forth between the two original
+											buses (usually with some form of amplification) without considering the meaning of the signals
+										</li>
+										<li>
+											<b>bridge</b>: Similar but more complex than repeater. It looks at the destination address that
+											accompanies each message and forwards a message across the connection only when that message is
+											destined for a computer on the other side. Thus, two machines residing on the same side of a
+											bridge can exchange messages without interfering with communication taking place on the other
+											side. A bridge produces a more efficient system than that produced by a repeater.
+										</li>
+										<li>
+											<b>switch</b>: Is essentially a bridge with multiple connections, allowing it to connect several buses
+											rather than just two. It produces a network consisting of several buses extending from the switch
+											(like spokes on a wheel) and considers the destination addresses of all messages and forwards only
+											those messages destined for other spokes. Moreover, each message that is forwarded is relayed only
+											into the appropriate spoke, thus minimizing the traffic in each spoke.
+										</li>
+										<li>
+											<b>router</b>: In contrast to those above, this is a special purpose computer that connects networks that
+											have incompatible potocols/charateristics, acting as a manager so the networks can still
+											communicate and forward messages. This forms an internet (not The Internet). Also fowards messages
+											in their proper direction using an internt-wide address system called IP address.
+										</li>
+										<li>
+											<b>gateway</b>: The “point” at which one network is linked to an internet, and it serves as a passageway
+											between the network and the outside world. Gateways can be found in a variety of forms, and thus
+											the term is used rather loosely. In many cases, a network's gateway is merely the router through
+											which it communicates with the rest of the internet. In other cases, the term gateway may be used
+											to refer to more than just a router. EX: in most residential WiFi networks that are connected to
+											the Internet, the term gateway refers collectively to both the network's AP and the router
+											connected to the AP because these two devices are normally packaged in a single unit.
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term">
+										<u>Client/Server Model</u> - A popular method for interprocess commmunication (which is
+										communication between different computers within a network or even within the same machine when
+										mutitasking in order to coordinate actions and preform their designated tasks) which defines the
+										basic roles played by the processes as either a client, which makes requests of other processes, or
+										a server, which satisfies the requests made by clients.
+									</li>
+									<ul>
+										<li>
+											<b>P2P</b>: "peer-to-peer" this is a model which involves processes that provide service to and receive
+											service from each other. Moreover, whereas a server must execute continuously so that it is
+											prepared to serve its clients at any time, the peer-to-peer model usually involves processes that
+											execute on a temporary basis. For example, applications of the peer-to-peer model include instant
+											messaging, in which people carry on a written conversation over the Internet, as well as
+											situations in which people play competitive interactive games. The collection of peers
+											participating in such a distribution is sometimes called a swarm.
+										</li>
+										<li>
+											<b>distribution system</b>: A software design that consists of software units that execute as processes
+											on different computers. It is a system that connects independent computers so they can work
+											closely together to provide computation or services compatible to a much larger machine. In
+											simpilar terms, it makes multiple smaller computers able to do the work of one big supercomputer
+											that might be more expensive.
+										</li>
+										<li>
+											<b>cloud computing</b>: a distribution system whereby huge pools of shared computers on the network can
+											be allocated for use by clients as needed. EX: Services such as Amazon's Elastic Compute Cloud
+											allow clients to rent virtual computers by the hour, without concern for where the computer
+											hardware is actually located.
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term">
+										<u>Internet Addressing</u> - An identifying tool used to create an "address" for each individual
+										device that links to the internet in order to ensure that data sent from another device goes to the
+										correct place.
+									</li>
+									<ul>
+										<li>
+											<b>tier 1</b>: A network that can reach every other network on the Internet solely via settlement-free
+											interconnection (without fees).
+										</li>
+										<li>
+											<b>tier 2</b>: A network that peers for free with some networks, but still purchases IP transit or pays
+											for peering to reach at least some portion of the Internet.
+										</li>
+										<li>
+											<b>tier 3</b>: A network that solely purchases transit/peering from other networks to participate in the
+											Internet.
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term"><u>IP Address</u> - "Internet Protocol"</li>
+									<ul>
+										<li>
+											<b>ICAN</b>: "Internet Corporation for Assigned Names and Numbers" a non-profit corporation established
+											to coordinate the Internet's operation. (add a link to: https://www.icann.org)
+										</li>
+										<li>
+											<b>DNS</b>: "Domain Name System" An Internet-wide directory system that is able to translate mnemonic
+											addresses (website addresses, for example) to IP addresses for the computer system to use. The
+											process of using DNS to perform a translation is called a DNS lookup
+										</li>
+										<li>
+											<b>TLD</b>: "Top-level domain" Suffixes at the end of website addresses that are used to reflect the
+											domain's classification. EX: ".com" for commercial institutions ".org" for nonprofit organizations
+											".edu" for educationsal institutions, etc.
+										</li>
+										<li>
+											<b>country-code TLDS</b>: Suffixes at the end of website addresses that are used to specify which country
+											a somain was beeing hosted. EX: ".ca" for Canada, ".au" for australia, ".uk" for Britain, etc.
+											(add a link to: https://www.worldstandards.eu/other/tlds/)
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term"><u>Internet Protocols</u></li>
+									<ul>
+										<li>
+											<b>FTP</b>: "File Transfer Protocol" an application for accessing another computer from a great distance,
+											implemented by the NNTP ("Network News Transfer Protocol"), an application for listing and copying
+											files from across the network
+										</li>
+										<li>
+											<b>HTTP</b>: "Hyper Text Transfer Protocol" A powerful and complex protocol that handles traditional
+											network applications
+										</li>
+										<li>
+											<b>SMTP</b>: "Simple Mail Transfer Protocol" A protocol that defines a way that two computers on the
+											network may interact when transmitting an email message from one host to the other. Uses DNS and
+											sometimes has to bridge the gap between two different servers.
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term">
+										<u>World Wide Web</u> - A hypertext document format for embedding hyperlinks to other documents; a
+										protocol for transferring hypertext across the network, and a server process that supplied hypertext
+										pages upon request. From this humble beginning, the Web quickly grew to support images, audio and
+										video, and by the mid 1990s had become the dominant application powering the growth of the Internet
+									</li>
+									<ul>
+										<li>
+											<b>URL</b>: "Uniform Resource Locator" A unique address given to each document on the Web that contains
+											the information needed by a browser to contact the proper server and request the desired document.
+										</li>
+										<li>
+											<b>client-side activities</b>: Activities that are performed by the client (such as a browser) Ex:
+											placing an order or filling out a form.
+										</li>
+										<li>
+											<b>server-side activities</b>: Activities that are performed by the server (such as a website) such as
+											providing search results or loading the client's account information
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term">
+										<u>Internet Four-Layer Software</u> - A hierarchy of software units provide the infrastructure
+										required for transferring messages from one machine to another (kind of like the steps of mailing
+										something 1. box the item 2.driver transports to boat, boat transports to driver in different area
+										etc.)
+									</li>
+									<ul>
+										<li>
+											<b>application layer</b>: Where the message typical originates and is prepared and is provided with a
+											destination address
+										</li>
+										<li><b>transport layer</b>: Chops message into packets</li>
+										<li><b>network layer</b>: Assigns intermediate address to each packet</li>
+										<li>
+											<b>link layer</b>: Transfers packet (and then the message has to go back up the steps but in the other
+											computer's system now)
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term"><u>Internet Is</u></li>
+									<ul>
+										<li>
+											<b>packet-switching network</b>: A network that uses a method of grouping data into packets that are
+											transmitted over a digital network. Packets are made of a header and a payload.
+										</li>
+										<li>
+											<b>fault tolerant</b>: The resilient property that enables a system to continue operating properly in the
+											event of failure or major dysfunction in one or more of its components.
+										</li>
+										<li>
+											<b>redundant</b>: A system design in which a component is duplicated so if it fails there will be a
+											backup.
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term"><u>Cybersecurity</u></li>
+									<ul>
+										<li>
+											<b>malware</b>: Malicioud software that might be transfered to, and executed on, the computer itself or
+											it might attack the computer from a distance.
+										</li>
+										<li>
+											<b>virus</b>: A software that "infects" a computer by inserting itself into programs that alreasy reside
+											in the machine. Then, when the “host” program is executed, the virus is also executed. When
+											executed, many viruses do little more than try to transfer themselves to other programs within the
+											computer. Some viruses, however, perform devastating actions such as degrading portions of the
+											operating system, erasing large blocks of mass storage, or otherwise corrupting data and other
+											programs
+										</li>
+										<li>
+											<b>worm</b>: an autonomous program that transfers itself through a network, taking up residence in
+											computers and forwarding copies of itself to other computers. As in the case of a virus, a worm
+											can be designed merely to replicate itself or to perform more extreme vandalism. A characteristic
+											consequence of a worm is an explosion of the worm's replicated copies that degrades the
+											performance of legitimate applications and can ultimately overload an entire network or internet.
+										</li>
+										<li>
+											<b>trojan horse</b>: a program that enters a computer system disguised as a desirable program, such as a
+											game or useful utility package, that is willingly imported by the victim. Once in the computer,
+											however, the Trojan horse performs additional activities that might have harmful effects.
+											Sometimes these additional activities start immediately. In other instances, the Trojan horse
+											might lie dormant until triggered by a specific event such as the occurrence of a preselected
+											date. Trojan horses often arrive in the form of attachments to enticing email messages
+										</li>
+										<li>
+											<b>spyware</b>: software that collects information about activities at the computer on which it resides
+											and reports that information back to the instigator of the attack. Some companies use spyware as a
+											means of building customer profiles, and in this context, it has questionable ethical merit. In
+											other cases, spyware is used for blatantly malicious purposes such as recording the symbol
+											sequences typed at the computer's keyboard in search of passwords or credit card numbers.
+										</li>
+										<li>
+											<b>phishing</b>: a technique of obtaining information explicitly by simply asking for it. It is often
+											carried out via email, and in this form, it is little more than an old telephone con. The
+											perpetrator sends email messages posing as a financial institution, a government bureau, or
+											perhaps a law enforcement agency. The email asks the potential victim for information that is
+											supposedly needed for legitimate purposes. However, the information obtained is used by the
+											perpetrator for hostile purposes.
+										</li>
+										<li>
+											<b>DoS attack</b>: "Denial of Service" the process of overloading a computer with messages. Denial of
+											service attacks have been launched against large commercial webservers on the Internet to disrupt
+											the company's business and in some cases have brought the company's commercial activity to a halt.
+											A denial of service attack requires the generation of a large number of messages in a short period
+											of time in order to overwhelm the targeted server.
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="term">
+								<ul>
+									<li class="term"><u>Protection</u></li>
+									<ul>
+										<li>
+											<b>firewall</b>: A primary prevention technique that is used to filter traffic passing through a point in
+											the network, usually with a program. It works as a tool for terminating a denial of service attack
+											because it provides a means of blocking traffic from the attacking computers.
+										</li>
+										<li>
+											<b>spam filter</b>: A version of firewall designed for the specific purpose of blocking unwanted emails
+										</li>
+										<li>
+											<b>proxy server</b>: A software unit that has filtering connotations by acting as an intermediary between
+											a cliatn and a server with the goal of sheilding the client from adverse actions of the
+											server.Without a proxy server, a client communicates directly with a server, meaning that the
+											server has an opportunity to learn a certain amount about the client
+										</li>
+										<li>
+											<b>antivirus software</b>: A software that is a means of defense against invasions via network
+											connections which is used to detect and remove the presence of known viruses and other infections.
+											antivirus software must be routinely maintained by downloading updates from the software's vendor.
+											Even this, however, does not guarantee the safety of a computer. After all, a new virus must first
+											infect some computers before it is discovered and a vaccine is produced. Thus, a wise computer
+											user never opens email attachments from unfamiliar sources, does not download software without
+											first confirming its reliability, does not respond to pop-up adds, and does not leave a computer
+											connected to the Internet when such connection is not necessary.
+										</li>
+										<li>
+											<b>cryptography</b>: the study of sending and receiving messages securely in the presence of adversaries.
+											Cryptographic tools such as encryption can be used to transform a message into a coded version
+											such that even if the encrypted data fall into unscrupulous hands, the encoded information will
+											remain confidential.
+										</li>
+										<li>
+											<b>public key encryption</b>: A topic in the field of cryptography which involves techniques by which the
+											encryption and decryption algorithms are known, and one of the keys is known, but the encoded
+											message remains secure. A public-key encryption system involves the use of two keys. One key,
+											known as the public key, is used to encrypt messages; the other key, known as the private key, is
+											required to decrypt messages
+										</li>
+									</ul>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
